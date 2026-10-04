@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Stream Counts",
+  "version": "1.0",
+  "description": "Shows per-track stream counts on Spotify Web Player album and artist pages, like the desktop app.",
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
